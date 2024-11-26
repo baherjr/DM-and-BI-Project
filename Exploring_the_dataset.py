@@ -44,4 +44,4 @@ plt.show()
 
 numeric_features = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
 for feature in numeric_features:
-    FunctionSet.analyze_outlier_impact(feature, heart_df)
+    FunctionSet.analyze_outlier_impact(feature, heart_df,)

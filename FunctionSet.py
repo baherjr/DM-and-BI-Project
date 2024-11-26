@@ -4,7 +4,7 @@ import seaborn as sns
 import os
 import numpy as np
 
-def analyze_outlier_impact(feature, df, output_dir='outliers', method='iqr'):
+def analyze_outlier_impact(feature, df, output_dir, method='iqr'):
 
     os.makedirs(output_dir, exist_ok=True)
 

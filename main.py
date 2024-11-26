@@ -1,8 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
-import FunctionSet
-import Outlier_Collector
+import outlier_detector
+import outlier_collection
 
 heart_df = pd.read_csv('../DM-and-BI-Project/Dataset/heart.csv')
 
@@ -46,5 +46,5 @@ numeric_features = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak']
 methods = ['iqr', 'zscore']
 for method in methods:
     for feature in numeric_features:
-        FunctionSet.analyze_outlier_impact(feature, heart_df,output_dir=f'outliers/{method.upper()}',method=method)
-    Outlier_Collector.outlier_collection(method=method)
+        outlier_detector.analyze_outlier_impact(feature, heart_df, output_dir=f'outliers/{method.upper()}', method=method)
+    outlier_collection.outlier_collection(method=method)

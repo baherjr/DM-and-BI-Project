@@ -1,0 +1,4 @@
+age,sex,cp,trestbps,chol,fbs,restecg,thalach,exang,oldpeak,slope,ca,thal,target
+37,1,2,130,250,0,1,187,0,3.5,0,0,2,1
+45,1,0,104,208,0,0,148,1,3.0,1,0,2,1
+59,1,3,178,270,0,0,145,0,4.2,0,0,3,1
